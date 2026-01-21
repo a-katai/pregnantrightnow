@@ -59,9 +59,11 @@ export default function Home() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.4, type: 'spring', stiffness: 200 }}
-            className="text-6xl mb-4"
+            className="text-6xl mb-4 flex items-center justify-center gap-2"
+            style={{ lineHeight: '1', height: 'auto' }}
           >
-            👶✨
+            <span>👶</span>
+            <span>✨</span>
           </motion.div>
 
           <motion.h1

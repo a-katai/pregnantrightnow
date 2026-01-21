@@ -52,7 +52,7 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-12 border-2 border-pink-200 shadow-2xl"
+          className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-12 pb-10 border-2 border-pink-200 shadow-2xl"
         >
           {/* Baby-themed emoji decoration */}
           <motion.div
@@ -68,7 +68,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent leading-tight"
           >
             Pregnant Right Now
           </motion.h1>
@@ -77,7 +77,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="space-y-5 text-lg md:text-xl text-gray-700 leading-relaxed"
+            className="space-y-5 text-lg md:text-xl text-gray-700 leading-relaxed pb-2"
           >
             <p className="font-medium">
               Join us on February 20th for a special EP release party celebrating PRN: Pregnant Right Now—a powerful project created with heart, honesty, and purpose.

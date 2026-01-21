@@ -56,13 +56,19 @@ export default function Home() {
         >
           {/* Baby-themed emoji decoration */}
           <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.3, type: 'spring', stiffness: 200 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
             className="text-5xl md:text-6xl mb-6 flex items-center justify-center gap-3"
+            style={{
+              imageRendering: 'crisp-edges',
+              WebkitFontSmoothing: 'antialiased',
+              textRendering: 'optimizeLegibility',
+              transform: 'translateZ(0)',
+            }}
           >
-            <span>👶</span>
-            <span>✨</span>
+            <span style={{ display: 'inline-block', transform: 'translateZ(0)' }}>👶</span>
+            <span style={{ display: 'inline-block', transform: 'translateZ(0)' }}>✨</span>
           </motion.div>
 
           <motion.h1
@@ -99,7 +105,7 @@ export default function Home() {
             className="mt-10"
           >
             <p className="text-pink-500 mb-8 text-xl font-semibold">
-              - Chariah 💕
+              - Chariah <span style={{ display: 'inline-block', imageRendering: 'crisp-edges', transform: 'translateZ(0)' }}>💕</span>
             </p>
             
             <motion.div
@@ -110,7 +116,7 @@ export default function Home() {
                 href="https://chariahs.world/rsvp"
                 className="inline-block px-10 py-5 bg-gradient-to-r from-pink-400 via-purple-400 to-pink-500 text-white font-bold rounded-full hover:from-pink-500 hover:via-purple-500 hover:to-pink-600 transition-all duration-300 shadow-xl text-lg"
               >
-                RSVP Now 🎉
+                RSVP Now <span style={{ display: 'inline-block', imageRendering: 'crisp-edges', transform: 'translateZ(0)' }}>🎉</span>
               </Link>
             </motion.div>
           </motion.div>

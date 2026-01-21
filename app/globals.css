@@ -106,3 +106,9 @@ button, a {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 140, 105, 0.5);
 }
+
+/* Crisp emoji rendering - ensure emojis render sharply */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -37,7 +37,7 @@ export default function RootLayout({
         <div 
           className="fixed inset-0 w-full h-full z-0 pointer-events-none"
           style={{
-            backgroundImage: 'url(/chariah2.png)',
+            backgroundImage: 'url(/pregnant.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

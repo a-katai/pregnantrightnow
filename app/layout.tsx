@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Pregnant Right Now',
     images: [
       {
-        url: '/pregnant.png',
+        url: 'https://www.pregnantrightnow.com/pregnant.png',
         width: 1200,
         height: 630,
         alt: 'Pregnant Right Now EP Release Party',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Pregnant Right Now - EP Release Party',
     description: 'Join us on February 20th for a special EP release party celebrating PRN: Pregnant Right Now',
-    images: ['/pregnant.png'],
+    images: ['https://www.pregnantrightnow.com/pregnant.png'],
   },
 }
 

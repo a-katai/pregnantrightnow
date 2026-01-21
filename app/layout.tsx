@@ -14,11 +14,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pregnant Right Now - EP Release Party',
     description: 'Join us on February 20th for a special EP release party celebrating PRN: Pregnant Right Now',
+    url: 'https://www.pregnantrightnow.com',
+    siteName: 'Pregnant Right Now',
+    images: [
+      {
+        url: '/pregnant.png',
+        width: 1200,
+        height: 630,
+        alt: 'Pregnant Right Now EP Release Party',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pregnant Right Now - EP Release Party',
     description: 'Join us on February 20th for a special EP release party celebrating PRN: Pregnant Right Now',
+    images: ['/pregnant.png'],
   },
 }
 

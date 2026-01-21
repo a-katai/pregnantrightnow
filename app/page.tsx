@@ -55,16 +55,15 @@ export default function Home() {
           className="bg-white/75 backdrop-blur-xl rounded-3xl p-8 md:p-12 pb-10 border-2 border-pink-200/50 shadow-2xl relative overflow-hidden"
           style={{
             boxShadow: '0 8px 32px 0 rgba(255, 182, 193, 0.37)',
-            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 240, 245, 0.7) 100%)',
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 240, 245, 0.75) 100%)',
           }}
         >
           {/* Glass reflection effect */}
           <div 
-            className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/40 to-transparent pointer-events-none rounded-t-3xl"
-            style={{
-              backdropFilter: 'blur(10px)',
-            }}
+            className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/30 to-transparent pointer-events-none rounded-t-3xl z-0"
           />
+          {/* Content wrapper */}
+          <div className="relative z-10">
           {/* Baby-themed emoji decoration */}
           <motion.div
             initial={{ scale: 0 }}
@@ -126,6 +125,7 @@ export default function Home() {
               </Link>
             </motion.div>
           </motion.div>
+          </div>
         </motion.div>
       </motion.div>
     </div>

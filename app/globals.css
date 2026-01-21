@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --gradient-start: #1a0a2e;
-  --gradient-end: #16213e;
+  --gradient-start: #fce7f3;
+  --gradient-end: #e0e7ff;
 }
 
 * {

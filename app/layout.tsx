@@ -41,7 +41,7 @@ export default function RootLayout({
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            opacity: 0.3,
+            opacity: 0.15,
           }}
         />
         {children}

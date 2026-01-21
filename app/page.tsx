@@ -8,29 +8,38 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 flex flex-col items-center justify-center p-8 relative overflow-hidden">
       {/* Floating hearts decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute text-pink-300 text-2xl"
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              opacity: 0,
-            }}
-            animate={{
-              y: [null, -100],
-              opacity: [0, 1, 0],
-              scale: [0.5, 1, 0.5],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 2,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          >
-            ❤️
-          </motion.div>
-        ))}
+        {[...Array(20)].map((_, i) => {
+          const positions = [
+            { x: '10%', y: '20%' }, { x: '20%', y: '40%' }, { x: '30%', y: '10%' },
+            { x: '40%', y: '60%' }, { x: '50%', y: '30%' }, { x: '60%', y: '70%' },
+            { x: '70%', y: '15%' }, { x: '80%', y: '50%' }, { x: '15%', y: '80%' },
+            { x: '25%', y: '25%' }, { x: '35%', y: '75%' }, { x: '45%', y: '45%' },
+            { x: '55%', y: '85%' }, { x: '65%', y: '35%' }, { x: '75%', y: '65%' },
+            { x: '85%', y: '25%' }, { x: '90%', y: '55%' }, { x: '5%', y: '45%' },
+            { x: '95%', y: '75%' }, { x: '12%', y: '60%' }
+          ];
+          const pos = positions[i % positions.length];
+          return (
+            <motion.div
+              key={i}
+              className="absolute text-pink-300 text-2xl"
+              style={{ left: pos.x, top: pos.y }}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{
+                y: [0, -50, -100],
+                opacity: [0, 1, 0],
+                scale: [0.5, 1, 0.5],
+              }}
+              transition={{
+                duration: 3 + (i % 3),
+                repeat: Infinity,
+                delay: (i * 0.2) % 2,
+              }}
+            >
+              ❤️
+            </motion.div>
+          );
+        })}
       </div>
 
       <motion.div

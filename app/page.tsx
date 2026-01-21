@@ -52,8 +52,19 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-12 pb-10 border-2 border-pink-200 shadow-2xl"
+          className="bg-white/75 backdrop-blur-xl rounded-3xl p-8 md:p-12 pb-10 border-2 border-pink-200/50 shadow-2xl relative overflow-hidden"
+          style={{
+            boxShadow: '0 8px 32px 0 rgba(255, 182, 193, 0.37)',
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 240, 245, 0.7) 100%)',
+          }}
         >
+          {/* Glass reflection effect */}
+          <div 
+            className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/40 to-transparent pointer-events-none rounded-t-3xl"
+            style={{
+              backdropFilter: 'blur(10px)',
+            }}
+          />
           {/* Baby-themed emoji decoration */}
           <motion.div
             initial={{ scale: 0 }}

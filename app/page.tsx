@@ -88,7 +88,7 @@ export default function Home() {
             className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed"
           >
             <p className="font-medium">
-              Join us on February 20th for a special EP release party celebrating PRN: Pregnant Right Now—a powerful project created with heart, honesty, and purpose.
+              Join us on February 21st for a special EP release party celebrating PRN: Pregnant Right Now—a powerful project created with heart, honesty, and purpose.
             </p>
             <p>
               This event is more than music; it&apos;s a gathering rooted in love, community, and support for moms in need. Come out to enjoy the EP, connect with others, and be part of something meaningful.

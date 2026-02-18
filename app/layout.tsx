@@ -10,10 +10,10 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   title: 'Pregnant Right Now - EP Release Party',
-  description: 'Join us on February 20th for a special EP release party celebrating PRN: Pregnant Right Now',
+  description: 'Join us on February 21st for a special EP release party celebrating PRN: Pregnant Right Now',
   openGraph: {
     title: 'Pregnant Right Now - EP Release Party',
-    description: 'Join us on February 20th for a special EP release party celebrating PRN: Pregnant Right Now',
+    description: 'Join us on February 21st for a special EP release party celebrating PRN: Pregnant Right Now',
     url: 'https://www.pregnantrightnow.com',
     siteName: 'Pregnant Right Now',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Pregnant Right Now - EP Release Party',
-    description: 'Join us on February 20th for a special EP release party celebrating PRN: Pregnant Right Now',
+    description: 'Join us on February 21st for a special EP release party celebrating PRN: Pregnant Right Now',
     images: ['https://www.pregnantrightnow.com/pregnant.png'],
   },
 }

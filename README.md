@@ -22,4 +22,4 @@ Deploy to Vercel (recommended) or any platform that supports Next.js:
 2. Add `pregnantrightnow.com` as a custom domain
 3. Deploy
 
-The landing page features a beautiful design matching the RSVP page style, with information about the February 20th EP release party and a link to RSVP at `chariahs.world/rsvp`.
+The landing page features a beautiful design matching the RSVP page style, with information about the February 21st EP release party and a link to RSVP at `chariahs.world/rsvp`.

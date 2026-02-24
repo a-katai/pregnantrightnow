@@ -1,19 +1,18 @@
 import type { Metadata } from 'next'
-import { Dancing_Script } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const dancingScript = Dancing_Script({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-dancing-script',
+  variable: '--font-inter',
 })
 
 export const metadata: Metadata = {
-  title: 'Pregnant Right Now - EP Release Party',
-  description: 'Join us on February 21st for a special EP release party celebrating PRN: Pregnant Right Now',
+  title: 'Pregnant Right Now | Chariah',
+  description: 'Stream P.R.N (Pregnant Right Now) EP by Chariah on Apple Music and Spotify',
   openGraph: {
-    title: 'Pregnant Right Now - EP Release Party',
-    description: 'Join us on February 21st for a special EP release party celebrating PRN: Pregnant Right Now',
+    title: 'Pregnant Right Now | Chariah',
+    description: 'Stream P.R.N (Pregnant Right Now) EP by Chariah on Apple Music and Spotify',
     url: 'https://www.pregnantrightnow.com',
     siteName: 'Pregnant Right Now',
     images: [
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
         url: 'https://www.pregnantrightnow.com/pregnant.png',
         width: 1200,
         height: 630,
-        alt: 'Pregnant Right Now EP Release Party',
+        alt: 'P.R.N Pregnant Right Now - Chariah',
       },
     ],
     locale: 'en_US',
@@ -29,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pregnant Right Now - EP Release Party',
-    description: 'Join us on February 21st for a special EP release party celebrating PRN: Pregnant Right Now',
+    title: 'Pregnant Right Now | Chariah',
+    description: 'Stream P.R.N (Pregnant Right Now) EP by Chariah on Apple Music and Spotify',
     images: ['https://www.pregnantrightnow.com/pregnant.png'],
   },
 }
@@ -41,22 +40,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={dancingScript.variable}>
+    <html lang="en" className={inter.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
       </head>
-      <body>
-        {/* Background image for all pages */}
-        <div 
-          className="fixed inset-0 w-full h-full z-0 pointer-events-none"
-          style={{
-            backgroundImage: 'url(/pregnant.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            opacity: 0.15,
-          }}
-        />
+      <body className="antialiased">
         {children}
       </body>
     </html>
